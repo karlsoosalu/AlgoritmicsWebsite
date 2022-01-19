@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <title>Complexity</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/complexity.css" />
+    <!-- icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="javascript/meist.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtjo257SrC-z4fqwK4WHUWzTYsOo_6M8Q&callback=initMap"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="main.html"><i class="fa fa-fw fa-home"></i>Main</a>
+          </li>
+          <li><a href="descriptions.html">Descriptions</a></li>
+          <li class="active"><a href="complexity.html">Complexity</a></li>
+          <li><a href="cheatSheet.html">Cheat sheet</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- https://www.interviewbit.com/tutorial/sorting-algorithms/ -->
+    <section>
+      <h1 class="headline">Complexity classes</h1>
+      <div class="main">
+        <table style="height: 154px" width="623" class="table table">
+          <thead>
+            <tr>
+              <th scope="col">Algorithm</th>
+              <th scope="col">Best</th>
+              <th scope="col">Average</th>
+              <th scope="col">Worst</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Quick Sort</th>
+              <td>Ω(n log(n))</td>
+              <td>Θ(n log(n))</td>
+              <td>O(n^2)</td>
+            </tr>
+            <tr>
+              <th scope="row">Merge Sort</th>
+              <td>Ω(n log(n))</td>
+              <td>Θ(n log(n))</td>
+              <td>O(n log(n))</td>
+            </tr>
+            <tr>
+              <th scope="row">Heap Sort</th>
+              <td>Ω(n log(n))</td>
+              <td>Θ(n log(n))</td>
+              <td>O(n log(n))</td>
+            </tr>
+            <tr>
+              <th scope="row">Bubble Sort</th>
+              <td>Ω(n)</td>
+              <td>Θ(n^2)</td>
+              <td>O(n^2)</td>
+            </tr>
+            <tr>
+              <th scope="row">Insertion Sort</th>
+              <td>Ω(n)</td>
+              <td>Θ(n^2)</td>
+              <td>O(n^2)</td>
+            </tr>
+            <tr>
+              <th scope="row">Selection Sort</th>
+              <td>Ω(n^2)</td>
+              <td>Θ(n^2)</td>
+              <td>O(n^2)</td>
+            </tr>
+            <tr>
+              <th scope="row">Radix Sort</th>
+              <td>Ω(nk)</td>
+              <td>Θ(nk)</td>
+              <td>O(nk)</td>
+            </tr>
+            <tr>
+              <th scope="row">Bucket Sort</th>
+              <td>Ω(n+k)</td>
+              <td>Θ(n+k)</td>
+              <td>O(n^2)</td>
+            </tr>
+            <tr>
+              <th scope="row">Built-in Sort</th>
+              <td>Ω(n log(n))</td>
+              <td>Θ(n log(n))</td>
+              <td>O(n log(n))</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <img src="images/logo.png" alt="University of Tartu" id="logo" />
+      <p>Karl Soosalu. University of Tartu 2022</p>
+    </footer>
+  </body>
+</html>

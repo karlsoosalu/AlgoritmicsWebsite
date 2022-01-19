@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <title>Algorithmics</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- css file -->
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/main.css">
+		<!-- icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="javascript/main.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="nav">
+				<ul>
+					<li class="active"><a href="main.html"><i class="fa fa-fw fa-home"></i>Main</a></li>
+					<li><a href="descriptions.html">Descriptions</a></li>
+					<li><a href="complexity.html">Complexity</a></li>
+					<li><a href="cheatSheet.html">Cheat sheet</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<h1 class="headline">Compare the speed of sorting algorithms</h1>
+
+			<div class="inputs">
+				<label for="nrElements">Select nr of elements (max 100000):</label>
+				<input type="number" id="nrElements" name="nrElements" min="1" max="100000" value="10000"><br><br>
+			</div>
+			<div class="inputs">	
+				<button class="btn" onclick="run(false)">Execute algorithms on random data</button>
+				<button class="btn" onclick="run(true)">Execute algorithms on sorted data</button><br><br>
+			</div>
+
+			<div style="display:none;" id="loader"></div>
+
+			<br>
+			<div class="row" id="results">
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#quick">Quick sort</a></h3>
+						<br>
+						<p id="QSTime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#merge">Merge sort</a></h3>
+						<br>
+						<p id="MTime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#heap">Heap sort</a></h3>
+						<br>
+						<p id="HTime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#bubble">Bubble sort</a></h3>
+						<br>
+						<p id="BTime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#insertion">Insertion sort</a></h3>
+						<br>
+						<p id="ITime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#selection">Selection sort</a></h3>
+						<br>
+						<p id="STime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#radix">Radix sort</a></h3>
+						<br>
+						<p id="RTime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#bucket">Bucket sort</a></h3>
+						<br>
+						<p id="BucTime"></p>
+						<br>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card"><i class="fa fa-envira"></i>
+						<h3><a href="descriptions.html#builtin">Built-in sort</a></h3>
+						<br>
+						<p id="BITime"></p>
+						<br>
+					</div>
+				</div>
+		</section>
+
+	<footer>
+		<img src="images/logo.png" alt="University of Tartu" id="logo">
+		<p>Karl Soosalu. University of Tartu 2022</p>	
+	</footer>
+
+	</body>
+</html>

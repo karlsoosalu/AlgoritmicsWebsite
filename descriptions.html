@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <title>Descriptions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/descriptions.css" />
+    <!-- icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="main.html"><i class="fa fa-fw fa-home"></i>Main</a>
+          </li>
+          <li class="active"><a href="descriptions.html">Descriptions</a></li>
+          <li><a href="complexity.html">Complexity</a></li>
+		  <li><a href="cheatSheet.html">Cheat sheet</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+		<h1 class="headline" id="quick">QUICK SORT</h1>
+		<p>✓ Pick one element as a pivot (middle one in the current implementation).</p>
+		<p>✓ Partion the list. Iterate through elements and swap them in the way smaller elements end on the left side of the pivot and larger elements on the right.</p>
+		<p>✓ When it is partioned, quicksort left and right part of the pivot separately.</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="merge">MERGE SORT</h1>
+		<p>✓ Divide the list in half until list is desired size (1 in current implementation).</p>
+		<p>✓ Mergesort both halves separately.</p>
+		<p>✓ Merge both halves, so they end up in sorted order</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="heap">HEAP SORT</h1>
+		<p>✓ Build a Minheap, where root is always the smallest element.</p>
+		<p>✓ Insert elements to the heap.</p>
+		<p>✓ Take the elements out of the heap one by one.</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="bubble">BUBBLE SORT</h1>
+		<p>✓ Compare and swap two neighboring elements until they are in the intended order.</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="insertion">INSERTION SORT</h1>
+		<p>✓ Iterate through all the elements</p>
+		<p>✓ Compare all the elements to previous ones and place it to the correct position</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="selection">SELECTION SORT</h1>
+		<p>✓ Find the smallest element in each iteration and replace it with the index of iteration.</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="radix">RADIX SORT</h1>
+		<p>✓ For each digit from least significant to the most significant sort input array according to that digit using counting sort.</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="bucket">BUCKET SORT</h1>
+		<p>✓ Create buckets according to min and max value.</p>
+		<p>✓ Put all objects to correct bucket.</p>
+		<p>✓ Sort buckets separately.</p>
+    </section>
+
+	<section>
+		<h1 class="headline" id="builtin">JAVASCRIPT BUILT-IN SORT</h1>
+		<p>✓ Takes a compareFunction(a,b) as argument, by default sorts integers as strings.</p>
+		<p>✓ Implementation differ in various browsers. Usually quicksort alternative is used.</p>
+    </section>
+
+    <footer>
+      <img src="images/logo.png" alt="University of Tartu" id="logo" />
+      <p>Karl Soosalu. University of Tartu 2022</p>
+    </footer>
+  </body>
+</html>

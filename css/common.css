@@ -1,0 +1,127 @@
+﻿* {
+  margin: 0;
+  font-family: Pacifico;
+  box-sizing: border-box;
+}
+
+header {
+  overflow: hidden;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+p {
+  font-size: 17px;
+}
+
+a {
+  color: #ff606b;
+}
+
+body {
+  background-image: url("../images/background1.jpg");
+}
+
+section {
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: auto;
+}
+
+footer {
+  background-color: rgb(165, 165, 165);
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+#logo {
+  width: 10%;
+}
+
+/*navigatsioon*/
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 5px 28px;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+
+ul li.active a {
+  background-color: lightgrey;
+}
+
+.headline {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  background-image: url("../images/background2.jpg");
+  border-radius: 25px;
+}
+
+.back {
+  overflow: auto;
+  background-color: aliceblue;
+}
+
+/*scrollbar*/
+/*Making scrollbar colourful; Code from https://www.w3schools.com/ */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(128, 128, 128);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: url("../images/background2.jpg");
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(82, 194, 194);
+}
